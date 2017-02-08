@@ -1,0 +1,47 @@
+﻿@* IEnumerable ==> Exposes an enumerator, which supports a simple iteration over a non-generic collection  *@
+@model IEnumerable<Assignment2.Models.Patient>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<table class="table">
+    <tr>
+        <th>
+            @* shows the name of the property or the string defined in the display attribute for the property.*@
+            @Html.DisplayNameFor(model => model.f_name)
+        </th>
+        <th>
+           
+            @Html.DisplayNameFor(model => model.l_name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.healthNum)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.birthDate)
+        </th>
+        <th></th>
+    </tr>
+    @* foreach loop ==> iterate through a collection of data  *@
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @* shows the value of the field *@
+            @Html.DisplayFor(modelItem => item.f_name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.l_name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.healthNum)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.birthDate)
+        </td>
+    </tr>
+}
+
+</table>
