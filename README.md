@@ -10,4 +10,4 @@ This includes:
 - Drafts once completed
 - database file
 
-** Any word documents are to be uplaoded as .txt files. Do not upload any files in .doc or .docx **
+***Any word documents are to be uplaoded as .txt files. Do not upload any files in .doc or .docx***
